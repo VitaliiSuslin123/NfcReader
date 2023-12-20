@@ -20,11 +20,11 @@ Setup and use ```NfcCardManager``` in your Activity.
     private fun setupNfcManager() {
         manager.setScannerListener(object : NfcCardManager.NfcCardScannerListener {
             override fun onScanResult(emvCard: EmvCard) {
-                viewModel.processNFCScanResult(emvCard)
+                //TODO your code
             }
 
             override fun onError(error: NfcCardError, throwable: Throwable?) {
-                viewModel.processNfcError(error, throwable)
+               //TODO your code
             }
         })
     }
